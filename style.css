@@ -90,11 +90,15 @@
 }
 
 .about{
+  color: azure;
   text-align: center;
   padding: 35px 35px 35px 35px;
   background-color:rgb(34, 34, 34);
   font-family: 'Manrope Bold', sans-serif;
   align-content: center;
+}
+.about >div>span> a:visited, a:link, a:hover, a:active{
+  color: azure;
 }
 
 .projects{
@@ -116,12 +120,12 @@
 .item2 { grid-area: linkedin; }
 .item3 { grid-area: instagram; }
 .item4 { grid-area: youtube; }
-.item5 { grid-area: facebook; }
+.item5 { grid-area: medium; }
 .link-container {
   color: azure;
   display: grid;
   grid-template-areas:
-    'github linkedin instagram youtube facebook';
+    'github linkedin medium instagram youtube';
     max-width: 600px;
   grid-gap: 10px;
   padding-top: 100px;
