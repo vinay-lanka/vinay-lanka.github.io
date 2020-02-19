@@ -13,7 +13,7 @@
 
 #nav {
   align-self: auto;
-  max-width: 500px;
+  max-width: 600px;
   text-align: center;
   padding:14px 20px 5px 20px;
 }
@@ -63,7 +63,7 @@
   margin-left: 24px;
   margin-right: 24px;
 }
-.nav-item > a:visited, a:link, a:hover, a:active{
+.nav-item>a{
   color: #0e0e0e;
 }
 
@@ -97,7 +97,7 @@
   font-family: 'Manrope Bold', sans-serif;
   align-content: center;
 }
-.about >div>span> a:visited, a:link, a:hover, a:active{
+.about>div>span>u>a{
   color: azure;
 }
 
@@ -116,6 +116,9 @@
   font-family: 'Manrope Bold', sans-serif;
   align-content: center;
 }
+.contact>center>span>a{
+  color: azure;
+}
 .item1 { grid-area: github; }
 .item2 { grid-area: linkedin; }
 .item3 { grid-area: instagram; }
@@ -132,11 +135,11 @@
   padding-bottom: 100px;
 }
 
-.link-container > div {
+.link-container>div {
   text-align: center;
   font-size: 40px;
 }
-.link-container > div > a {
+.link-container>div>a {
   color: azure;
 }
 
