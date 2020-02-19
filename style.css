@@ -1,25 +1,25 @@
 .landing{
-    height: 100vh;
-    align-content: center;
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(255,58,58,0.155703781512605) 100%);
+  height: 100vh;
+  align-content: center;
+  background: rgb(2,0,36);
+  background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(255,58,58,0.155703781512605) 100%);
 }
 
 .cardspace{
-    padding-top:15vh;
-    padding-left: 20px;
-    padding-right: 20px;
+  padding-top:15vh;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #nav {
-    align-self: auto;
-    max-width: 500px;
-    text-align: center;
-    padding:14px 20px 5px 20px;
+  align-self: auto;
+  max-width: 500px;
+  text-align: center;
+  padding:14px 20px 5px 20px;
 }
 #hr{
-    color: #0e0e0e;
-    width: 110%;
+  color: #0e0e0e;
+  width: 110%;
 }
 
 @media screen and (min-width: 601px) {
@@ -32,58 +32,69 @@
   .type{
     font-size: 1.8em;
   }
+  .profilepic{
+    max-width: 250px; 
+    max-height: 250px;
+  }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   .nav-item {
-    font-size: 16px;
+    font-size: 17px;
   }
   .name{
-    font-size: 1.9em;
+    font-size: 2.2em;
   }
   .type{
     font-size: 1.2em;
   }
+  .profilepic{
+    max-width: 180px; 
+    max-height: 180px;
+  }
 }
 
+.profilepic{
+  border-radius: 50%;
+}
 .nav-item {
-    font-family: 'Manrope Medium', sans-serif;
-    margin-left: 24px;
-    margin-right: 24px;
+  font-family: 'Manrope Medium', sans-serif;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 .navlink, .navlink:visited, .blog-item a {
-    color: #0e0e0e;
+  color: #0e0e0e;
 }
 
 .introcard{
   background: rgb(2,0,36);
   background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(252, 144, 144, 0) 100%);
-    opacity: 0.9;
-    padding: 35px 50px 35px 35px;
-    max-width: 600px;
-    height:auto;
-    border-radius: 10px;
-    border-width: 2px;
-    overflow: auto;
-    text-align: left;
-    box-shadow: 0 5px 10px rgba(255, 200, 200, 0.568), 0 15px 40px rgba(209, 171, 171, 0.438);
+  opacity: 0.9;
+  padding: 35px 50px 35px 35px;
+  max-width: 600px;
+  height:auto;
+  border-radius: 10px;
+  border-width: 2px;
+  overflow: auto;
+  text-align: left;
+  box-shadow: 0 5px 10px rgba(255, 200, 200, 0.568), 0 15px 40px rgba(209, 171, 171, 0.438);
 }
 .name{
   color: #0e0e0e;
-    font-family: 'Manrope SemiBold', sans-serif;
+  font-family: 'Manrope SemiBold', sans-serif;
 }
 .type{
   color: #0e0e0e;
-    font-family: 'Manrope Medium', sans-serif;
+  font-family: 'Manrope Medium', sans-serif;
 }
 
 .about{
-    text-align: center;
-    padding: 35px 35px 35px 35px;
-    background-color:rgb(34, 34, 34);
-    font-family: 'Manrope Bold', sans-serif;
-    align-content: center;
+  text-align: center;
+  padding: 35px 35px 35px 35px;
+  background-color:rgb(34, 34, 34);
+  font-family: 'Manrope Bold', sans-serif;
+  align-content: center;
 }
 
 
