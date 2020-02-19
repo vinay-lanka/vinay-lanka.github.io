@@ -11,7 +11,7 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
     <script src="https://kit.fontawesome.com/23f92337cf.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -70,29 +70,26 @@
     </div>
     <script type="text/javascript" src='./script.js'></script>
     <script>
-        $("#projects").ready(function(){
-            var req = new XMLHttpRequest();
-            req.onreadystatechange = function(){
-                if (req.readyState == 4 && req.status == 200) {
-                    var blogs = JSON.parse(this.responseText).projects;
-                    var blog_list = document.getElementById("projects-list");
-                    blogs.forEach(function(item) {
-                        blog_list.innerHTML += `
-                        <div class="blog-item">
-                            <h2><a target="_blank" href="${item.url}">${item.name}</a></h2>
-                            <p>${item.abbreviation}</p>
-                        </div>
-                        `
-                    }) 
-                }
-            }
-            req.open("GET","/assets/data.json");
-            req.send();
-        })
+        // $("#projects").ready(function(){
+        //     var req = new XMLHttpRequest();
+        //     req.onreadystatechange = function(){
+        //         if (req.readyState == 4 && req.status == 200) {
+        //             var blogs = JSON.parse(this.responseText).projects;
+        //             var blog_list = document.getElementById("projects-list");
+        //             blogs.forEach(function(item) {
+        //                 blog_list.innerHTML += `
+        //                 <div class="blog-item">
+        //                     <h2><a target="_blank" href="${item.url}">${item.title}</a></h2>
+        //                     <p>${item.description}</p>
+        //                 </div>
+        //                 `
+        //             }) 
+        //         }
+        //     }
+        //     req.open("GET","/assets/data.json");
+        //     req.send();
+        // })
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>

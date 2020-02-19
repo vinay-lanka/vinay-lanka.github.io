@@ -1,39 +1,29 @@
 {
     "projects": [
         {
-            "title": "Simulation Federated Learning with Docker and gRPC",
-            "description": "A simulation of Federated learning using Docker and gRPC. Developed for CSE4001 - Parallel and Distributed Computing course at VIT Vellore.",
-            "url": "#"
+            "title": "Color Sorting Arm - OpenCV",
+            "description": "A Robot arm that sorts objects based on color using a DOBOT Magician and a Raspberry Pi running OpenCV",
+            "url": "https://www.youtube.com/watch?v=BghCrTwk0t0"
         },
         {
-            "title": "Chatbot for 'Evento'",
-            "description": "A Deep Learing based 'Question-Answering'chatbot system built for 'Evento' - an event organizing platform developed by the students at <a class=\"project-tag-link\" href=\"https://ieeevit.com\">@IEEE VIT Vellore</a>.",
-            "url": "https://github.com/mayankshah1607/Evento-Chatbot"
+            "title": "Tnet - Toshiba Summer Internship",
+            "description": "An end to end IoT solution to display Injection Moulding machine data using Nodejs, MySQL and AngularJS",
+            "url": "https://github.com/vinay-lanka/tnet"
         },
         {
-            "title": "Deep Learning for Music Composition",
-            "description": "A web application that uses Deep Learning in the backend to generate song lyrics like Maroon 5.",
-            "url": "https://github.com/mayankshah1607/Deep-Learning-Lyrics-Generator"
+            "title": "Timefetch - Toshiba Summer Internship",
+            "description": "Libcurl to fetch time to initialise RTC in an injection moulding machine",
+            "url": "https://github.com/vinay-lanka/timefetch"
         },
         {
-            "title": "Enigma Microservices",
-            "description": "Backend microservices developed for <a class=\"project-tag-link\" href=\"https://enigma.ieeevit.com\">@Enigma</a>",
-            "url": "https://github.com/mayankshah1607/Enigma-Microservices"
+            "title": "XY Coordinate",
+            "description": "Website to accept coordinates as input for a 2 axis robot",
+            "url": "https://github.com/vinay-lanka/xyrobotwebsite"
         },
         {
-            "title": "Named-Entity Recognition",
-            "description": "A NER model trained from scratch on a Bi-LSTM Architecture (using Keras) on a Kaggle dataset.",
-            "url": "https://github.com/mayankshah1607/Named-Entity-recognition-LSTM"
-        },
-        {
-            "title": "Node Boiler",
-            "description": "A simple and flexible plug-and-play CLI tool that can automate boilplate code generation for your next RESTful API built with NodeJS.",
-            "url": "https://github.com/mayankshah1607/node-boiler"
-        },
-        {
-            "title": "Predicting Product ratings",
-            "description": "Implementation of sentiment analysis on amazon product reviews to predict product ratings.",
-            "url": "https://github.com/mayankshah1607/Product-Ratings-Prediction"
+            "title": "HealthApp",
+            "description": "Microcontrollers project - IoT Solution to monitor a patient's vitals",
+            "url": "https://github.com/vinay-lanka/micro-project-website"
         }
     ]
 }
