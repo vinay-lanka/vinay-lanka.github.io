@@ -36,6 +36,12 @@
     max-width: 250px; 
     max-height: 250px;
   }
+  .aboutpic{
+    padding-left: 20px;
+    float: right;
+    max-width: 250px; 
+    max-height: 250px;
+  }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -50,6 +56,11 @@
     font-size: 1.2em;
   }
   .profilepic{
+    max-width: 180px; 
+    max-height: 180px;
+  }
+  .aboutpic{
+    padding-top: 20px;
     max-width: 180px; 
     max-height: 180px;
   }
@@ -90,23 +101,41 @@
 }
 
 .about{
-  color: azure;
-  text-align: center;
+  color: rgb(27, 27, 27);
+  /* text-align: center; */
   padding: 35px 35px 35px 35px;
-  background-color:rgb(34, 34, 34);
+  background: rgb(255, 255, 255);
   font-family: 'Manrope Bold', sans-serif;
   align-content: center;
 }
 .about>div>span>u>a{
-  color: azure;
+  color: rgb(27, 27, 27);
+}
+.about>p>u>a{
+  color: rgb(27, 27, 27);
 }
 
 .projects{
   text-align: center;
   padding: 35px 35px 35px 35px;
-  background-color:rgb(255, 255, 255);
+  background-color:rgba(255,58,58,0.155703781512605);
   font-family: 'Manrope Bold', sans-serif;
   align-content: center;
+}
+.projects-list{
+  padding: 25px;
+}
+.project-card{
+  text-align: left;
+  max-width: 1000px;
+  background-color: #ffffff;
+  color: rgb(39, 39, 39);
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 40px; 
+}
+.card-body {
+  padding: 0 0 0 1.25rem;
 }
 
 .contact{
@@ -131,7 +160,7 @@
     'github linkedin medium instagram youtube';
     max-width: 600px;
   grid-gap: 10px;
-  padding-top: 100px;
+  padding-top: 80px;
   padding-bottom: 100px;
 }
 
@@ -186,3 +215,5 @@
     url("./assets/fonts/ttf/Manrope-ExtraLight.ttf") format("truetype");
     font-style: normal;
     font-weight: 200; }
+
+    
