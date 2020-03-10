@@ -42,6 +42,10 @@
     max-width: 250px; 
     max-height: 250px;
   }
+  .link-container>div {
+    text-align: center;
+    font-size: 40px;
+  }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
@@ -63,6 +67,10 @@
     padding-top: 20px;
     max-width: 180px; 
     max-height: 180px;
+  }
+  .link-container>div {
+    text-align: center;
+    font-size: 30px;
   }
 }
 
@@ -122,9 +130,7 @@
   font-family: 'Manrope Bold', sans-serif;
   align-content: center;
 }
-.projects-list{
-  padding: 25px;
-}
+
 .project-card{
   text-align: left;
   max-width: 1000px;
@@ -166,7 +172,6 @@
 
 .link-container>div {
   text-align: center;
-  font-size: 40px;
 }
 .link-container>div>a {
   color: azure;
