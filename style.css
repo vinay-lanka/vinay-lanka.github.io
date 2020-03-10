@@ -4,7 +4,9 @@
   background: rgb(2,0,36);
   background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(255,58,58,0.155703781512605) 100%);
 }
-
+html{
+  scroll-behavior: smooth;
+}
 .cardspace{
   padding-top:15vh;
   padding-left: 20px;
