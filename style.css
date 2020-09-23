@@ -1,8 +1,8 @@
 .landing{
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   align-content: center;
-  background: rgb(2,0,36);
-  background: linear-gradient(180deg, rgba(2,0,36,0) 0%, rgba(255,58,58,0.155703781512605) 100%);
+  background:#e7ecee;
 }
 html{
   scroll-behavior: smooth;
@@ -35,8 +35,8 @@ html{
     font-size: 1.8em;
   }
   .profilepic{
-    max-width: 250px; 
-    max-height: 250px;
+    max-width: 220px; 
+    max-height: 220px;
   }
   .aboutpic{
     padding-left: 20px;
@@ -89,9 +89,6 @@ html{
 }
 
 .introcard{
-  background: rgb(2,0,36);
-  background: linear-gradient(180deg, rgba(2, 0, 36, 0) 0%, rgba(252, 144, 144, 0) 100%);
-  opacity: 0.9;
   padding: 35px 50px 35px 35px;
   max-width: 600px;
   height:auto;
@@ -99,7 +96,11 @@ html{
   border-width: 2px;
   overflow: auto;
   text-align: left;
-  box-shadow: 0 5px 10px rgba(255, 200, 200, 0.568), 0 15px 40px rgba(209, 171, 171, 0.438);
+  margin-bottom: 7vh;
+  border-radius: 50px;
+  background: #e7ecee;
+  box-shadow:  20px 20px 60px #c4c9ca, 
+             -20px -20px 60px #ffffff;
 }
 .name{
   color: #0e0e0e;
@@ -109,6 +110,29 @@ html{
   color: #0e0e0e;
   font-family: 'Manrope Medium', sans-serif;
 }
+.item1 { grid-area: github; }
+.item2 { grid-area: linkedin; }
+.item3 { grid-area: instagram; }
+.item4 { grid-area: youtube; }
+.item5 { grid-area: medium; }
+.link-container {
+  color: azure;
+  display: grid;
+  grid-template-areas:
+    'github linkedin medium instagram youtube';
+    max-width: 600px;
+  grid-gap: 10px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+}
+
+.link-container>div {
+  text-align: center;
+}
+.link-container>div>a {
+  color: rgb(27, 27, 27);
+}
+
 
 .about{
   color: rgb(221, 221, 221);
@@ -127,10 +151,10 @@ html{
 
 .projects{
   text-align: center;
-  padding: 35px 35px 35px 35px;
-  background-color:rgba(255,58,58,0.155703781512605);
   font-family: 'Manrope Bold', sans-serif;
   align-content: center;
+  min-height: 100vh;
+  padding-bottom: 40px;
 }
 
 .project-card{
@@ -146,38 +170,6 @@ html{
   padding: 0 0 0 1.25rem;
 }
 
-.contact{
-  text-align: center;
-  padding: 35px 35px 35px 35px;
-  background-color:rgb(34, 34, 34);
-  font-family: 'Manrope Bold', sans-serif;
-  align-content: center;
-}
-.contact>center>span>a{
-  color: azure;
-}
-.item1 { grid-area: github; }
-.item2 { grid-area: linkedin; }
-.item3 { grid-area: instagram; }
-.item4 { grid-area: youtube; }
-.item5 { grid-area: medium; }
-.link-container {
-  color: azure;
-  display: grid;
-  grid-template-areas:
-    'github linkedin medium instagram youtube';
-    max-width: 600px;
-  grid-gap: 10px;
-  padding-top: 80px;
-  padding-bottom: 100px;
-}
-
-.link-container>div {
-  text-align: center;
-}
-.link-container>div>a {
-  color: azure;
-}
 
 /* Fonts */
 @font-face {
