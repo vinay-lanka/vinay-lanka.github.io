@@ -97,7 +97,7 @@ html{
   overflow: auto;
   text-align: left;
   margin-bottom: 7vh;
-  border-radius: 50px;
+  border-radius: 30px;
   background: #e7ecee;
   box-shadow:  20px 20px 60px #c4c9ca, 
              -20px -20px 60px #ffffff;
@@ -154,23 +154,38 @@ html{
   font-family: 'Manrope Bold', sans-serif;
   align-content: center;
   min-height: 100vh;
+  padding-left: 3%;
+  padding-right: 3%;
   padding-bottom: 40px;
 }
 
 .project-card{
-  text-align: left;
-  max-width: 1000px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px;
+  max-width: 1100px;
   background-color: #ffffff;
   color: rgb(39, 39, 39);
-  border-radius: 10px;
   border: none;
+  border-radius: 20px;
   margin-bottom: 40px; 
 }
-.card-body {
-  padding: 0 0 0 1.25rem;
+
+.text{
+  text-align: justify;
+  max-width: 400px;
 }
 
-
+.responsive {
+  margin-top: 30px;
+  max-width: 100%;
+  height: auto;
+}
+.responsive_video {
+  margin-top: 30px;
+  max-width: 100%;
+}
 /* Fonts */
 @font-face {
     font-family: "Manrope ExtraBold";

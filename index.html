@@ -5,6 +5,7 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Vinay Lanka</title>
+    <link rel="icon" href="./assets/images/Vectorfavicon.svg" type="image/svg">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -18,9 +19,9 @@
     <div id="home" class="landing">
         <center>
             <div id="nav">
-                <span class="nav-item"><a id="nav1" href="#" onclick="toggleProjects()">Projects</a></span>
-                <span class="nav-item"><a id="nav2" href="#" onclick="toggleBlogs()">Blogs</a></span>
-                <span class="nav-item"><a href="./assets/resume.pdf">Resume</a></span>
+                <span class="nav-item"><a id="nav1" href="#" onclick="toggle(this)">Projects</a></span>
+                <span class="nav-item"><a id="nav2" href="#" onclick="toggle(this)">Blogs</a></span>
+                <span class="nav-item"><a href="./assets/Resume.pdf">Resume</a></span>
                 <hr>
             </div>
         </center>
@@ -50,50 +51,89 @@
 
         <div id="project_div" class="projects">
             <span style="font-size:40px; color: rgb(0, 0, 0);">Projects</span><br><br>
-            <div class="projects-list">
-                <center>
-                    <div class="project-card">
-                        <div class="card-body">
-                            <h3 class="title">Tnet</h3>
-                            <p class="text">
-                                Tnet is an end to end solution with a portal designed to help
-                                customers view their injection moulding machine data in an intuitive
-                                web interface.<br>
-                                Uses MySQL, Node.js with Express and AngularJS. Part of my
-                                summer internship at Toshiba Machine, Chennai.<br>
-                            </p>
-                            <a href="https://github.com/vinay-lanka/tnet">Check it out!</a>
-                        </div>
+            <center>
+                <div class="project-card">
+                    <div class="text">
+                        <h3>Tnet</h3>
+                        Tnet is an end to end solution with a portal designed to help
+                        customers view their injection moulding machine data in an intuitive
+                        web interface.<br><br>
+                        Uses MySQL, Node.js with Express and AngularJS. Part of my
+                        summer internship at Toshiba Machine, Chennai.<br><br>
+                        <a href="https://github.com/vinay-lanka/tnet">Check it out!</a>
                     </div>
-                    <div class="project-card">
-                        <div class="card-body">
-                            <h3 class="title">Robot arm color sorter</h3>
-                            <p class="text">A Raspberry Pi based real time colour sorter based on Computer Vision (OpenCV)
-                                and the Dobot Magician arm, a robotic arm with an Android app to show statistics</p>
-                            <a href="https://youtube.com/watch?v=BghCrTwk0t0&t=21s">Check it out!</a>
-                        </div>
+                    <div>
+                        <img class="responsive" src="assets/images/toshiba.png" height="350" width="600">
                     </div>
-                    <div class="project-card">
-                        <div class="card-body">
-                            <h3 class="title">IoT Manipulation of a Robotic Arm (ROS)</h3>
-                            <p class="text">Implementation of an industry ready robot controller that
-                                controls the Arm remotely through a web interface. Uses
-                                MoveIt, a ROS Package for path planning and IKFast inverse
-                                kinematics solver.</p>
-                            <a href="https://github.com/vinay-lanka/xyrobotwebsite">Check it out!</a>
-                        </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="text">
+                        <h3 style="text-align: left;">IoT Manipulation of a Robotic Arm (ROS)</h3>
+                        <p class="text">
+                            Implementation of an industry ready robot arm controller for arm
+                            jogging and saving positions through a web interface. <br><br>
+                            Uses ROS and MoveIt for Inverse Kinematics and Path Planning<br>
+                            An AVR microcontroller drives the servos with a PCA9685 board<br>
+                            The website is made with a Node-js backend and has an intuitive frontend
+                            to manipulate the robot.</p>
+                        <a href="https://github.com/vinay-lanka/xyrobotwebsite">Check it out!</a>
                     </div>
-                    <div class="project-card">
-                        <div class="card-body">
-                            <h3 class="title">Pitch Shifter</h3>
-                            <p class="text">Implementation of various pitch shifting algorithms <br>
-                            - Phase Vocoder Method<br>
-                            - Wavelet Transformation Method</p>
-                            <a href="https://github.com/vinay-lanka/Pitch-Shift-Algorithm">Check it out!</a>
-                        </div>
+                    <div style="margin-left: 0px; padding: 10px;">
+                        <iframe class="responsive_video" width="560" height="315" src="https://www.youtube.com/embed/9ZG4WmOKQkI" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
-                </center>
-            </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="text">
+                        <h3 style="text-align: left;">Home Service Robot</h3>
+                        <p class="text">A Home Service Robot simulated in ROS and Gazebo. Can navigate to a maker, pick
+                            up a virtual object and drop it off at another maker.<br><br>
+                            Uses - <br>
+                            - Adaptive Monte Caro Localisation for Localisation.<br>
+                            - Gmapping for Mapping<br>
+                            - Navigation is done with move_base ros package<br>
+                        </p>
+                        <a href="github.com/vinay-lanka/Home-Service-Robot">Check it out!</a>
+                    </div>
+                    <div>
+                        <img class="responsive" src="assets/images/project.gif" height="300" width="552">
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="text">
+                        <h3 style="text-align: left;">Robot arm color sorter</h3>
+                        <p class="text">A Raspberry Pi based real time colour sorter based on Computer Vision (OpenCV)
+                            and the Dobot Magician arm, a robotic arm with an Android app to show statistics</p>
+                        <a href="https://youtube.com/watch?v=BghCrTwk0t0&t=21s">Check it out!</a>
+                    </div>
+                    <div>
+                        <iframe class="responsive_video" width="560" height="315" src="https://www.youtube.com/embed/BghCrTwk0t0" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="text">
+                        <h3 style="text-align: left;">Pitch Shifter</h3>
+                        Changing the pitch of an audio signal (which is related to the
+                        logarithm of the frequency), but is dissimilar to resampling,
+                        pitch shifting retains the duration of the original signal. <br><br>
+                        Implementation of various pitch shifting algorithms <br>
+                        - Phase Vocoder Method<br>
+                        - Wavelet Transformation Method</p>
+                        <a href="https://github.com/vinay-lanka/Pitch-Shift-Algorithm">Check it out!</a>
+                    </div>
+                    <div>
+                        <img class="responsive" src="assets/images/pitchshift.png" height="400" width="550">
+                    </div>
+                </div>
+
+            </center>
         </div>
 
         <div id="blogs_div" class="projects">
@@ -101,57 +141,56 @@
             <div class="projects-list">
                 <center>
                     <div class="project-card">
-                        <div class="card-body">
-                            <h3 class="title">Tnet</h3>
-                            <p class="text">
-                                Tnet is an end to end solution with a portal designed to help
-                                customers view their injection moulding machine data in an intuitive
-                                web interface.<br>
-                                Uses MySQL, Node.js with Express and AngularJS. Part of my
-                                summer internship at Toshiba Machine, Chennai.<br>
-                            </p>
-                            <a href="https://github.com/vinay-lanka/tnet">Check it out!</a>
+                        <div class="text">
+                            <h3 style="text-align: left;">Exploring Embedded - A Primer</h3>
+                            Exploring Embedded, a complete guide for anyone wanting to look beyond Arduino. 
+                            <br>
+                            A comprehensive tutorial with links to software, explanation, and references for literature to guide
+                            you further in the field of embedded systems development.<br><br>
+                            <a href="https://medium.com/@vinaylanka/exploring-embedded-a-primer-8977a51bb7af">Check it out!</a>
+                        </div>
+                        <div style="margin-left: 10px;">
+                            <img class="responsive" src="assets/images/exploringembedded.png" height="330" width="588">
                         </div>
                     </div>
+
                     <div class="project-card">
-                        <div class="card-body">
-                            <h3 class="title">Robot arm color sorter</h3>
-                            <p class="text">A Raspberry Pi based real time colour sorter based on Computer Vision (OpenCV)
-                                and the Dobot Magician arm, a robotic arm with an Android app to show statistics</p>
-                            <a href="https://youtube.com/watch?v=BghCrTwk0t0&t=21s">Check it out!</a>
+                        <div class="text">
+                            <h3 style="text-align: left;">Control any Robotic Arm with ROS</h3>
+                            ROS has a steep learning curve and integrating one's robot in its ecosystem is a
+                            challenge.<br>
+                            An article on how to control any Robotic Arm with
+                            MoveIt, a powerful motion planning framework in ROS.<br><br>
+                            <a href="https://blog.usejournal.com/control-any-robotic-arm-with-ros-b10a3115306c">Check it
+                                out!</a>
+                        </div>
+                        <div style="margin-left: 10px;">
+                            <img class="responsive" src="assets/images/rosarmmoveit.png" height="330" width="588">
                         </div>
                     </div>
+
                     <div class="project-card">
-                        <div class="card-body">
-                            <h3 class="title">IoT Manipulation of a Robotic Arm (ROS)</h3>
-                            <p class="text">Implementation of an industry ready robot controller that
-                                controls the Arm remotely through a web interface. Uses
-                                MoveIt, a ROS Package for path planning and IKFast inverse
-                                kinematics solver.</p>
-                            <a href="https://github.com/vinay-lanka/xyrobotwebsite">Check it out!</a>
+                        <div class="text">
+                            <h3 style="text-align: left;">Development Boards : A Guide</h3>
+                            A helpful guide for people to choose the right board for their next project<br><br>
+                            <a href="https://medium.com/techloop/development-boards-a-guide-ab5767f15d47">Check it out!</a>
                         </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="card-body">
-                            <h3 class="title">Pitch Shifter</h3>
-                            <p class="text">Implementation of various pitch shifting algorithms <br>
-                            - Phase Vocoder Method<br>
-                            - Wavelet Transformation Method</p>
-                            <a href="https://github.com/vinay-lanka/Pitch-Shift-Algorithm">Check it out!</a>
+                        <div>
+                            <img class="responsive" src="assets/images/devboard.jpeg" height="350" width="500">
                         </div>
                     </div>
                 </center>
             </div>
         </div>
-</div>
+    </div>
 
     <div id="about" class="about">
         <span style="font-size:40px; color:#e7ecee;">About</span><br>
         <img src="./assets/images/about.png" class="aboutpic"><br>
         <br>
         <p style="font-size: 20px; line-height: 1.6;">
-            A final year ECE undergraduate student at <u><a
-                    href="https://vit.ac.in/">Vellore Institute of Technology-Vellore</a></u>.<br>
+            A final year ECE undergraduate student at <u><a href="https://vit.ac.in/">Vellore Institute of
+                    Technology-Vellore</a></u>.<br>
             Open Source Contributor and a Developer with an interest in Electronics, IoT and Robotics.<br>
             Completed the Robotics Software Engineer nanodegree offered by Udacity.<br>
             Seeking work experience to help me grow my real-world experience in the technology industry.
