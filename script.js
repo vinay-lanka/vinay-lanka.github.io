@@ -1,5 +1,5 @@
 new TypeIt("#app", {
-  strings: ["Certified Robotics Engineer","Embedded Systems Developer","Full-Stack Web Developer","IoT Engineer"],
+  strings: ["Certified Robotics Engineer","IoT Engineer","Full-Stack Web Developer"],
   speed: 30,
   breakLines: false,
   waitUntilVisible: true,

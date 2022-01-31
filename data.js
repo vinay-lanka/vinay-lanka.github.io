@@ -2,7 +2,7 @@ var project_data =  [
     {
         "title": "Robot-Web-Suite",
         "body": "Robot-Web-Suite is a web-based platform to remotely control your robotic devices in real-time. <br>An intuitive web interface to manipulate devices like robotic arms and rovers with a service to log points and achieve playback. <br>The system is aimed to replace the usage of teach pendants or similar devices in industrial automation. <br>Using ROS and MoveIt packages we focus on creating a hardware agnostic system that can easily be ported to any robot.",        "link": "https://www.youtube.com/watch?v=37U62tWk-zE&t=29s",
-        "imagelink": "assets/images/robotwebsuite.png"
+        "imagelink": "assets/images/robotwebsuitedemo.png"
     },
     {
         "title": "Tnet",
