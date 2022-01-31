@@ -2,7 +2,9 @@
   min-height: 100vh;
   height: fit-content;
   align-content: center;
-  background:#e7ecee;
+  /* background:#292929; */
+  background: linear-gradient(360deg, rgba(14,14,14,1) 0%, rgba(50,50,50,1) 100%);
+  /* background:#e7ecee; */
 }
 html{
   scroll-behavior: smooth;
@@ -19,10 +21,7 @@ html{
   text-align: center;
   padding:14px 20px 5px 20px;
 }
-#hr{
-  color: #0e0e0e;
-  width: 110%;
-}
+
 
 @media screen and (min-width: 601px) {
   .nav-item {
@@ -31,8 +30,11 @@ html{
   .name{
     font-size: 2.9em;
   }
+  .position{
+    font-size: 1.25em;
+  }
   .type{
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
   .profilepic{
     max-width: 220px; 
@@ -53,10 +55,13 @@ html{
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 @media screen and (max-width: 600px) {
   .nav-item {
-    font-size: 17px;
+    font-size: 14px;
   }
   .name{
     font-size: 2.2em;
+  }
+  .position{
+    font-size: 0.9em;
   }
   .type{
     font-size: 1.2em;
@@ -81,11 +86,12 @@ html{
 }
 .nav-item {
   font-family: 'Manrope Medium', sans-serif;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 .nav-item>a{
-  color: #0e0e0e;
+  /* color: #0e0e0e; */
+  color: #efefef;
 }
 
 .introcard{
@@ -98,16 +104,27 @@ html{
   text-align: left;
   margin-bottom: 7vh;
   border-radius: 30px;
-  background: #e7ecee;
+  background: #191919;
+  box-shadow:  -20px 20px 60px #121212,
+             20px -20px 60px #121212;
+  /* background: #e7ecee;
   box-shadow:  20px 20px 60px #c4c9ca, 
-             -20px -20px 60px #ffffff;
+             -20px -20px 60px #ffffff; */
 }
+
 .name{
-  color: #0e0e0e;
+  /* color: #0e0e0e; */
+  color: #efefef;
   font-family: 'Manrope SemiBold', sans-serif;
 }
+.position{
+  /* color: #0e0e0e; */
+  color: #efefef;
+  font-family: 'Manrope Medium', sans-serif;
+}
 .type{
-  color: #0e0e0e;
+  /* color: #0e0e0e; */
+  color: #efefef;
   font-family: 'Manrope Medium', sans-serif;
 }
 .item1 { grid-area: github; }
@@ -130,23 +147,24 @@ html{
   text-align: center;
 }
 .link-container>div>a {
-  color: rgb(27, 27, 27);
+  /* color: rgb(27, 27, 27); */
+  color: #efefef;
 }
 
 
 .about{
-  color: rgb(221, 221, 221);
+  color: rgb(29, 29, 29);
   /* text-align: center; */
   padding: 35px 35px 35px 35px;
-  background: rgb(27, 27, 27);
+  background: #efefef;
   font-family: 'Manrope Bold', sans-serif;
   align-content: center;
 }
 .about>div>span>u>a{
-  color: rgb(221, 221, 221);
+  color: rgb(29, 29, 29);
 }
 .about>p>u>a{
-  color: rgb(221, 221, 221);
+  color: rgb(29, 29, 29);
 }
 
 .projects{
@@ -175,6 +193,7 @@ html{
 .text{
   text-align: justify;
   max-width: 400px;
+  margin-right: 20px;
 }
 
 .responsive {
