@@ -3,13 +3,13 @@ var project_data =  [
         "title": "Intercom Device (Client) (Neoflux)",
         "body": "Developed a solution for a production-grade multithreaded VOIP product with G711 alaw encoding and encryption based on the Raspberry Pi CM4 module. Designed a carrier board with suitable components for audio recording, processing, and playback.",        
         "link": "",
-        "imagelink": "assets/images/intercomdevice.jpg"
+        "imagelink": "assets/images/intercom.jpg"
     },
     {
         "title": "Autonomous Land Mapping Robot (Client) (Neoflux)",
         "body": "Developed a fully autonomous exploration robot to map an unknown area in 3D. Designed the chassis, electronics and custom algorithms for navigation. Implemented 2-stage EKF (local and global) with RTK GPS for precise position estimates.",        
         "link": "",
-        "imagelink": "assets/images/almr.jpg"
+        "imagelink": "assets/images/autonomouslandmappingrobot.jpg"
     },
     {
         "title": "Magic Wand (Gesture recognition) (Neoflux)",
