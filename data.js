@@ -1,7 +1,32 @@
 var project_data =  [
     {
+        "title": "Intercom Device (Client) (Neoflux)",
+        "body": "Developed a solution for a production-grade multithreaded VOIP product with G711 alaw encoding and encryption based on the Raspberry Pi CM4 module. Designed a carrier board with suitable components for audio recording, processing, and playback.",        
+        "link": "",
+        "imagelink": "assets/images/intercomdevice.jpg"
+    },
+    {
+        "title": "Autonomous Land Mapping Robot (Client) (Neoflux)",
+        "body": "Developed a fully autonomous exploration robot to map an unknown area in 3D. Designed the chassis, electronics and custom algorithms for navigation. Implemented 2-stage EKF (local and global) with RTK GPS for precise position estimates.",        
+        "link": "",
+        "imagelink": "assets/images/almr.jpg"
+    },
+    {
+        "title": "Magic Wand (Gesture recognition) (Neoflux)",
+        "body": "Created a wand that controls the robot when you wave it in a specific pattern. Used Edge Impulse for recording and detecting the patterns.",        
+        "link": "https://www.linkedin.com/feed/update/urn:li:activity:6985485858464305152/",
+        "imagelink": "assets/images/swishandflickvideo.png"
+    },
+    {
+        "title": "The battery pack (Neoflux)",
+        "body": "A tiny battery made with off the shelf components for quick prototyping of IoT usecases with wireless charging.",        
+        "link": "https://www.youtube.com/watch?v=QO9MB4L_WQU",
+        "imagelink": "assets/images/batterypack.png"
+    },
+    {
         "title": "Robot-Web-Suite",
-        "body": "Robot-Web-Suite is a web-based platform to remotely control your robotic devices in real-time. <br>An intuitive web interface to manipulate devices like robotic arms and rovers with a service to log points and achieve playback. <br>The system is aimed to replace the usage of teach pendants or similar devices in industrial automation. <br>Using ROS and MoveIt packages we focus on creating a hardware agnostic system that can easily be ported to any robot.",        "link": "https://www.youtube.com/watch?v=37U62tWk-zE&t=29s",
+        "body": "Robot-Web-Suite is a web-based platform to remotely control your robotic devices in real-time. <br>An intuitive web interface to manipulate devices like robotic arms and rovers with a service to log points and achieve playback. <br>The system is aimed to replace the usage of teach pendants or similar devices in industrial automation. <br>Using ROS and MoveIt packages we focus on creating a hardware agnostic system that can easily be ported to any robot.",        
+        "link": "https://www.youtube.com/watch?v=37U62tWk-zE&t=29s",
         "imagelink": "assets/images/robotwebsuitedemo.png"
     },
     {
@@ -9,12 +34,6 @@ var project_data =  [
         "body": "Tnet is an end to end solution with a portal designed to help customers view their injection moulding machine data in an intuitive web interface.<br><br> Uses MySQL, Node.js with Express and AngularJS. Part of my summer internship at Toshiba Machine, Chennai.",
         "link": "https://github.com/vinay-lanka/tnet",
         "imagelink": "assets/images/toshiba.png"
-    },
-    {
-        "title": "RobIoTic Arms - A web interface for Robotics Arms (ROS/MoveIt)",
-        "body": "Implementation of an industry ready robot arm controller for arm jogging and saving positions through a web interface. <br><br> Uses ROS and MoveIt for Inverse Kinematics and Path Planning<br> An AVR microcontroller drives the servos with a PCA9685 board<br> The website is made with a Node-js backend and has an intuitive frontend to manipulate the robot.</p>",
-        "link": "https://www.youtube.com/watch?v=T3iEXmOk7j4&t=23s",
-        "imagelink": "assets/images/robioticarm.jpg"
     },
     {
         "title": "Home Service Robot",
@@ -31,10 +50,28 @@ var project_data =  [
 ]
 var blog_data =  [
     {
+        "title": "Research Paper - <br> Designing and Implementing Robot-Web-Suite, <br> A Cloud Based Robotics Platform",
+        "body": "Robot-Web-Suite is a web-based platform to control your robotic devices remotely in real-time. The end-user is provided with an intuitive web interface to manipulate devices like robotic arms and mobile robots without having any prior knowledge of the kinematics of the machines. The system also provides a service to log points and achieve playback.",
+        "link": "https://ieeexplore.ieee.org/document/9929637",
+        "imagelink": "assets/images/paper.png"
+    },
+    {
         "title": "Autonomous Rover From Scratch (ROS) Part 1",
         "body": " Part 1 of making an Autonomous Robot from scratch using ROS.<br> Here we look at building a basic model and getting started with the microcontroller.",
         "link": "https://www.youtube.com/watch?v=SLDJAOEjVt4&t=434s",
         "imagelink": "assets/images/autonomousroverpt1.jpg"
+    },
+    {
+        "title": "Swish and Flick — Gesture Detection using Deep Learning on Edge Devices",
+        "body": "Using an ESP-32 and Edge Impulse to recognize magic spells via gesture recognition",
+        "link": "https://medium.com/@vinaylanka/swish-and-flick-gesture-detection-using-deep-learning-on-edge-devices-42d9d863f0ae",
+        "imagelink": "assets/images/swishandflickblog.png"
+    },
+    {
+        "title": "Closed Loop Position Control in Stepper Motors",
+        "body": "Using the AMS5600 Magnetic Encoder to solve closed loop control",
+        "link": "https://medium.com/@vinaylanka/closed-loop-position-control-in-stepper-motors-7f531c084dcd",
+        "imagelink": "assets/images/closedloop.png"
     },
     {
         "title": "Autonomous Rover From Scratch (ROS) Part 2",

@@ -43,14 +43,16 @@ function toggle(that){
 $(function() {
     // console.log(project_data);
   var html = ''
-  html+= '<span style="font-size:40px; color: #efefef;">Projects</span><br><br>';
+  html+= '<span style="font-size:30px; color: #efefef;">Projects</span><br><br>';
   html+= '<center>'
   $.each(project_data, function(key, value) {
     html+= '<div class="project-card">';
     html+= '<div class="text">';
     html+= '<h3 style="text-align: left;">' + value.title + '</h3><br>'
     html+= value.body
-    html+= '<br><br><a href="' + value.link + '">Check it out!</a>'
+    if (value.link != "") {
+      html+= '<br><br><a href="' + value.link + '">Check it out!</a>'
+    }
     html+= '</div>'  
     html+= '<div>'
     html+= '<img class="responsive" src="' + value.imagelink + '" height="300" width="533">'
@@ -65,7 +67,7 @@ $(function() {
 $(function() {
   console.log(blog_data);
   var blog_html = ''
-  blog_html+= '<span style="font-size:40px; color: #efefef;">Blogs</span><br><br>';
+  blog_html+= '<span style="font-size:30px; color: #efefef;">Papers/Blogs/Videos</span><br><br>';
   blog_html+= '<center>'
   $.each(blog_data, function(key, value) {
     blog_html+= '<div class="project-card">';
