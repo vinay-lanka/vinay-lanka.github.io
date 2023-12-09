@@ -1,5 +1,17 @@
 var project_data =  [
     {
+        "title": "EV Charging Bot",
+        "body": "Developed an EV Charging Bot based on the FANUC CRX-10iA/L cobot that can dock to a charger using a Stereo camera based perception system. The perception system generates a goal in 3D space from a video feed and an velocity IK based solver designed from scratch generates and executes a real-time trajectory using the SRI Jacobian inverse method using Damped Least Squares.",        
+        "link": "https://github.com/vinay-lanka/car_charger_robot",
+        "imagelink": "assets/images/sim.gif"
+    },
+    {
+        "title": "HDAL: Human Detection and Localization",
+        "body": "Designed and deployed a geometric computer vision algorithm that uses intrinsic camera parameters and pixel information from bounding box information detected using a YOLO v5 model to get accuracy levels greater than 95% for calculated human coordinates relative to the robot’s camera.",        
+        "link": "https://github.com/vinay-lanka/Human-Detection-and-Localization",
+        "imagelink": "https://i3.ytimg.com/vi/6D_xVzv4fGo/maxresdefault.jpg"
+    },
+    {
         "title": "Intercom Device (Client) (Neoflux)",
         "body": "Developed a solution for a production-grade multithreaded VOIP product with G711 alaw encoding and encryption based on the Raspberry Pi CM4 module. Designed a carrier board with suitable components for audio recording, processing, and playback.",        
         "link": "",
@@ -49,6 +61,12 @@ var project_data =  [
     }
 ]
 var blog_data =  [
+    {
+        "title": "Disturbance Compensating Model Predictive Control",
+        "body": "Wrote a comprehensive report and implemented the paper by Z. Li and J. Sun, ”Disturbance Compensating Model Predictive Control With Application to Ship Heading Control”",
+        "link": "assets/DCMPC_Report.pdf",
+        "imagelink": "assets/images/dcmpc.png"
+    },
     {
         "title": "Research Paper - <br> Designing and Implementing Robot-Web-Suite, <br> A Cloud Based Robotics Platform",
         "body": "Robot-Web-Suite is a web-based platform to control your robotic devices remotely in real-time. The end-user is provided with an intuitive web interface to manipulate devices like robotic arms and mobile robots without having any prior knowledge of the kinematics of the machines. The system also provides a service to log points and achieve playback.",
