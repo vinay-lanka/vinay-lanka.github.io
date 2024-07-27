@@ -1,4 +1,15 @@
-var project_data =  [
+var project_data =  [{
+        "title": "EV Charging Bot",
+        "body": "Developed a novel particle filter for drone localization and odometry prediction using visual image encodings (CNN, VecKM, histogram of feature encodings) as measurement readings. Implemented, tested, and optimized the model in a Gazebo PX4 SITL world, demonstrating improved drone positioning accuracy.",        
+        "link": "https://github.com/vinay-lanka/Visual-Encoding-Particle-Filter",
+        "imagelink": "assets/images/camdroneloc.jpeg"
+    },
+    {
+        "title": "Path Planning Competition Winner",
+        "body": "Won the Path Planning competition held for ENPM661 - Path Planning for Robots. The Turtlebot has to navigate the environment from start to finish in the least time, avoiding the white lines and the obstacles. Was a fun experience.",        
+        "link": "https://youtu.be/sFpMTiF1X4U",
+        "imagelink": "assets/images/competition.png"
+    },
     {
         "title": "EV Charging Bot",
         "body": "Developed an EV Charging Bot based on the FANUC CRX-10iA/L cobot that can dock to a charger using a Stereo camera based perception system. The perception system generates a goal in 3D space from a video feed and an velocity IK based solver designed from scratch generates and executes a real-time trajectory using the SRI Jacobian inverse method using Damped Least Squares.",        
