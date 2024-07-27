@@ -1,5 +1,5 @@
 var project_data =  [{
-        "title": "EV Charging Bot",
+        "title": "Drone Visual Particle Filter (CamDroneLoc)",
         "body": "Developed a novel particle filter for drone localization and odometry prediction using visual image encodings (CNN, VecKM, histogram of feature encodings) as measurement readings. Implemented, tested, and optimized the model in a Gazebo PX4 SITL world, demonstrating improved drone positioning accuracy.",        
         "link": "https://github.com/vinay-lanka/Visual-Encoding-Particle-Filter",
         "imagelink": "assets/images/camdroneloc.jpeg"
