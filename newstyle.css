@@ -263,17 +263,20 @@ html, body {
 }
 
 .introcard{
+  margin-top: 50px;
   padding: 35px 50px 35px 35px;
   max-width: 600px;
   height:auto;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   border-width: 2px;
   overflow: auto;
   text-align: left;
   margin-bottom: 7vh;
-  border-radius: 30px;
+  border-radius: 0px;
   background: #ffffff;
-  box-shadow:10px -10px 25px#d3d3d3,-10px 10px 25px#ffffff;           
+  border:2px solid #292929;
+  box-shadow: 10px -10px 0px#2c2c2c;
+  font-family: 'Manrope Medium', sans-serif;          
 }
 
 
@@ -373,13 +376,14 @@ html, body {
 
 /* CARDS */
 .card {
+  border: 1px solid rgba(0, 0, 0, 1.0);
   position: relative;
   height: 0;
-  padding-bottom: 75%; /* This creates a 4:3 aspect ratio */
+  padding-bottom: 75%;
   background-color: white;
-  border-radius: 20px;
+  border-radius: 0px;
   overflow: hidden;
-  box-shadow: 0 0 0 5px #ffffff80;
+  /* box-shadow: 5px -5px 0px #000000; */
   transition: all 0.3s ease;
 }
 
@@ -416,8 +420,8 @@ html, body {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 1);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   padding: 10px;
   font-size: 16px;
   font-weight: 700;
