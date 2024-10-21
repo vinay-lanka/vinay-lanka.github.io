@@ -1,18 +1,18 @@
 var project_data =  [{
         "title": "Drone Visual Particle Filter (CamDroneLoc)",
-        "body": "Developed a novel particle filter for drone localization and odometry prediction using visual image encodings (CNN, VecKM, histogram of feature encodings) as measurement readings. Implemented, tested, and optimized the model in a Gazebo PX4 SITL world, demonstrating improved drone positioning accuracy.",        
+        "body": "Developed a novel particle filter for drone localization using visual encodings (CNN, VecKM, HOF), tested in Gazebo PX4 SITL, improving positioning accuracy.",
         "link": "https://github.com/vinay-lanka/Visual-Encoding-Particle-Filter",
         "imagelink": "assets/images/camdroneloc.jpeg"
     },
     {
         "title": "Path Planning Competition Winner",
-        "body": "Won the Path Planning competition held for ENPM661 - Path Planning for Robots. The Turtlebot has to navigate the environment from start to finish in the least time, avoiding the white lines and the obstacles. Was a fun experience.",        
+        "body": "Footage from our winning run for a Path Planning competition held for ENPM661 - Path Planning for Robots.",        
         "link": "https://youtu.be/sFpMTiF1X4U",
         "imagelink": "assets/images/competition.png"
     },
     {
         "title": "EV Charging Bot",
-        "body": "Developed an EV Charging Bot based on the FANUC CRX-10iA/L cobot that can dock to a charger using a Stereo camera based perception system. The perception system generates a goal in 3D space from a video feed and an velocity IK based solver designed from scratch generates and executes a real-time trajectory using the SRI Jacobian inverse method using Damped Least Squares.",        
+        "body": "Developed an EV Charging Bot with FANUC CRX-10iA/L, using stereo vision for 3D goal generation and a custom IK solver for real-time trajectory execution via Damped Least Squares.",
         "link": "https://github.com/vinay-lanka/car_charger_robot",
         "imagelink": "assets/images/sim.gif"
     },

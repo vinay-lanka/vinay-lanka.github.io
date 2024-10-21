@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JF0P134MMT"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-JF0P134MMT');
+    </script>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Vinay Lanka</title>
+    <link rel="icon" href="./assets/images/Vectorfavicon.svg" type="image/svg">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./newstyle.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+    <script src="https://kit.fontawesome.com/23f92337cf.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="home" class="landing">
+        <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox" />
+              <span></span>
+              <span></span>
+              <span></span>
+              <ul id="menu">
+                <a href="#" onclick="toggle(this)"><li>Home</li></a>
+                <a href="#" onclick="toggle(this)"><li>Projects</li></a>
+                <a href="#" onclick="toggle(this)"><li>Videos</li></a>
+                <a href="#" onclick="toggle(this)"><li>Blogs</li></a>
+                <a href="#" onclick="toggle(this)"><li>About</li></a>
+                <a href="./assets/Vinay_Resume__Aug_2024_.pdf"><li>Resume</li></a>
+              </ul>
+            </div>
+          </nav>
+        <div id="cardspace" class="cardspace">
+            <center>
+                <div class="profilepic">
+                    <img src="assets/images/pfp.JPG" class="profilepic">
+                </div>
+                <br>
+                <br>
+                <div class="introcard">
+                    <span class="name">Hello! I'm Vinay Lanka</span><br>
+                    <span class="position">Robotics Graduate Student <br>University of Maryland, College Park</span><br>
+                    <span id="app" class="type"></span>
+                </div>
+                <div class="link-container">
+                    <div class="github"><a href="https://github.com/vinay-lanka"><i class="fab fa-github"></i></a></div>
+                    <div class="linkedin"><a href="https://www.linkedin.com/in/vinaylanka/"><i
+                                class="fab fa-linkedin-in"></i></a></div>
+                    <div class="medium"><a href="https://medium.com/@vinaylanka"><i class="fab fa-medium"></i></a></div>
+                    <div class="instagram"><a href="https://www.instagram.com/vinayalt/"><i
+                                class="fab fa-instagram"></i></a></div>
+                    <div class="youtube"><a href="https://www.youtube.com/channel/UCgAPhxlyvs-Pi1v_MuodhKw"><i
+                                class="fab fa-youtube"></i></a></div>
+                </div>
+            </center>
+        </div>
+
+        <div id="project_div" class="projects">
+        </div>
+
+        <div id="blogs_div" class="projects">
+        </div>
+
+        <div id="videos_div" class="projects">
+        </div>
+
+        <div id="about" class="about">
+            <h1 class="project-title">About</h1>
+            <img src="./assets/images/umd.png" class="aboutpic"><br>
+            <br>
+            <p style="font-size: 20px; line-height: 1.6;">
+                Currently pursuing my Masters in Robotics from <u><a href="https://umd.edu/">University of Maryland, College Park </a></u> <br>
+                Parsons X Computer Vision Intern <br> <br>
+                Previously, <br>
+                - Robotics Engineer at Newspace Research and Technologies<br>
+                - Research and Development Engineer (Robotics & IoT) at Neoflux<br><br>
+                - Electronics and Communication Engineering undergraduate from <u><a href="https://vit.ac.in/">Vellore Institute of
+                Technology-Vellore</a></u><br>
+                - Certified Robotics Software Engineer by Udacity<br>
+                - Occassionally dabble in all things tech. Follow my socials to stay updated!
+            </p>
+            <br>
+            <div style="font-size: 18px;">
+                <span>Ex-Technical Lead at <u><a href="https://ieeevit.com/">IEEE VIT Student Board</a></u></span><br><br>
+            </div>
+            <hr>
+            <h2>Parsons</h2>
+            <img src="./assets/images/parsons.jpg" class="aboutlogo"><br>
+            - Developed and benchmarked various approaches (Structure from Motion, NeRF, Gaussian Splatting) for 3D reconstruction from aerial views of sites surveyed for Federal Customers.
+            <br><br>
+            - Developed Parsnip, to help with facility inspections. It matches IR images to daytime shots with EXIF metadata, decreasing the hours spent combing the datasets to find matches. It matches and aligns the IR-RGB images via homography and has smart annotation tools to draw polygons, text and arrows.
+            <br><br>
+            - Helped set up and troubleshoot the Clearpath Husky A200 as a part of the Geophysics team with the Outdoor Nav software stack.
+            <hr>
+            <h2>Newspace Research and Technologies</h2>
+            <img src="./assets/images/nrt.jpeg" class="aboutlogo"><br>
+            - Developed solutions for image projection, and orthorectification of UAV feeds onto a map. Developed an end-to-end near real-time image stitching pipeline integrated with the fixed-wing swarming stack.
+            <br><br>
+            - Develop a standardized pipeline for accessing aerial camera feeds with metadata in simulation following the MISB 0601 KLV standard.
+            <br><br>
+            - Successfully integrated the Epsilon E175 EO/IR camera with a prototype VTOL and tested object tracking and geolocating algorithms.
+            <hr>
+            <h2>Neoflux</h2>
+            <img src="./assets/images/tidmg.jpeg" class="aboutlogo"><br>
+            Autonomous Land Mapping Robot<br>
+            Developed a fully autonomous exploration robot to map an unknown area in 3D. Designed the chassis, electronics, and custom algorithms for navigation
+            Setup GPS RTK (Base and Rover) and IMU and implemented Global EKF with the robot_localization package to get centimeter-level accuracy in positioning
+            <br> - Setup scripts and algorithms to import contours and set goal positions for maximum coverage (Coverage Path Planning)
+            <br> - Setup the ROS Navigation Stack with the teb_local_planner to ensure smooth motion with dynamic obstacles
+            <br><br>
+            Protection One (Client) <br>
+            Worked on the prototype of the alarm-based intercom product for Protection One.
+            Developed a solution for a production-grade multithreaded VOIP product with G711 alaw encoding and encryption based on the Raspberry Pi CM4 module. Designed a carrier board with suitable components for audio recording, processing, and playback.
+            <br><br>
+            Worked on a set of internal reference projects, blogs, and content to build Neoflux (Previously R&D THIS IS! DMG). 
+            <br> - Edge gesture recognition to control a robotic arm using TF Lite, EdgeImpulse, ROS
+            <br> - Designed a 5DoF Robotic Arm with a feedback control loop compatible with the ros_control framework
+            <br> - Designed and Developed an AMR as a testbench for various algorithms and projects using the ROS navigation stack
+            <br> - Designed a portable battery solution for IoT projects capable of wireless charging.
+        </div>
+    </div>
+    
+
+    <script type="text/javascript" src='./newscript.js'></script>
+    <script type="text/javascript" src='./data.js'></script>
+</body>
+
+</html>

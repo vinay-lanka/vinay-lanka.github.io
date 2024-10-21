@@ -17,18 +17,49 @@
 
 <body>
     <div id="home" class="landing">
-        <center>
+        <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <a href="#"><li>Home</li></a>
+                <a id="nav1" href="#" onclick="toggle(this)"><li>Projects</li></a>
+                <a id="nav2" href="#" onclick="toggle(this)"><li>Videos</li></a>
+                <a href="#" onclick="toggle(this)"><li>Blogs</li></a>
+                <a href="./assets/Vinay_Resume__Aug_2024_.pdf"><li>Resume</li></a>
+              </ul>
+            </div>
+          </nav>
+        <!-- <center>
             <div id="nav">
                 <span class="nav-item"><a id="nav1" href="#" onclick="toggle(this)">Projects</a></span>
                 <span class="nav-item"><a id="nav2" href="#" onclick="toggle(this)">Videos/Blogs</a></span>
                 <span class="nav-item"><a href="./assets/Vinay_Resume__Aug_2024_.pdf">Resume</a></span>
                 <hr style="border: 1px solid white; width: 90%;">
             </div>
-        </center>
+        </center> -->
         <div id="cardspace" class="cardspace">
             <center>
                 <div class="profilepic">
-                    <img src="assets/images/profilepic.jpg" class="profilepic">
+                    <img src="assets/images/pfp.png" class="profilepic">
                 </div>
                 <br>
                 <br>
