@@ -1,132 +1,304 @@
-.landing{
-  min-height: 100vh;
-  height: fit-content;
-  align-content: center;
-  /* background:#292929; */
-  background: linear-gradient(360deg, rgba(14,14,14,1) 0%, rgba(50,50,50,1) 100%);
-  /* background:#e7ecee; */
-}
-html{
-  scroll-behavior: smooth;
-}
-.cardspace{
-  padding-top:15vh;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-#nav {
-  align-self: auto;
-  max-width: 600px;
-  text-align: center;
-  padding:14px 20px 5px 20px;
-}
-
-
-@media screen and (min-width: 601px) {
-  .nav-item {
-    font-size: 20px;
-  }
-  .name{
-    font-size: 2.9em;
-  }
-  .position{
-    font-size: 1.25em;
-  }
-  .type{
-    font-size: 1.6em;
-  }
-  .profilepic{
-    max-width: 220px; 
-    max-height: 220px;
-  }
-  .aboutpic{
-    padding-left: 20px;
-    float: right;
-    max-width: 250px; 
-    max-height: 250px;
-  }
-  .link-container>div {
-    text-align: center;
-    font-size: 40px;
-  }
-}
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  .nav-item {
-    font-size: 14px;
-  }
-  .name{
-    font-size: 2.2em;
-  }
-  .position{
-    font-size: 0.9em;
-  }
-  .type{
-    font-size: 1.2em;
-  }
-  .profilepic{
-    max-width: 180px; 
-    max-height: 180px;
-  }
-  .aboutpic{
-    padding-top: 20px;
-    max-width: 180px; 
-    max-height: 180px;
-  }
-  .link-container>div {
-    text-align: center;
-    font-size: 30px;
-  }
-}
-
-.profilepic{
-  border-radius: 50%;
-}
-.nav-item {
-  font-family: 'Manrope Medium', sans-serif;
-  margin-left: 15px;
-  margin-right: 15px;
-}
-.nav-item>a{
-  /* color: #0e0e0e; */
-  color: #efefef;
-}
-
-.introcard{
-  padding: 35px 50px 35px 35px;
-  max-width: 600px;
-  height:auto;
-  border-radius: 10px;
-  border-width: 2px;
+html, body {
+  height: 100%;
+  width: 100%;
   overflow: auto;
-  text-align: left;
-  margin-bottom: 7vh;
-  border-radius: 30px;
-  background: #191919;
-  box-shadow:  -20px 20px 60px #121212,
-             20px -20px 60px #121212;
-  /* background: #e7ecee;
-  box-shadow:  20px 20px 60px #c4c9ca, 
-             -20px -20px 60px #ffffff; */
+
+}
+
+.landing{
+  /* min-height: 100vh;
+  height: fit-content; */
+  align-content: center;
+  width: 100%;
 }
 
 .name{
   /* color: #0e0e0e; */
-  color: #efefef;
+  color: #0e0e0e;
   font-family: 'Manrope SemiBold', sans-serif;
 }
 .position{
   /* color: #0e0e0e; */
-  color: #efefef;
+  color: #0e0e0e;
   font-family: 'Manrope Medium', sans-serif;
 }
-.type{
-  /* color: #0e0e0e; */
-  color: #efefef;
-  font-family: 'Manrope Medium', sans-serif;
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
 }
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0;
+  z-index: 2;
+  
+  -webkit-touch-callout: none;
+}
+
+
+#menuToggle span
+{
+  display: block;
+  width: 28px; 
+  height: 3px; 
+  margin-bottom: 6px; 
+  position: relative;
+  
+  background: #222222;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 3px 0px; 
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 50%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 50%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(0px, -1px);
+  background: #252525;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0px, 0px);
+}
+
+@media screen and (max-width: 768px) {
+  #menuToggle {
+    top: 30px;
+    left: 25px;
+  }
+  
+}
+
+
+
+
+#menu
+{
+  position: absolute;
+  width: 150px;
+  margin: -100px 0 0 -50px;
+  padding: 25px;
+  padding-top: 100px;
+  /* border: 1px solid rgba(0, 0, 0, 1.0); */
+  border-right:  2px solid #000;
+  border-bottom: 2px solid #000;
+  background-color:rgba(255, 255, 255, 0.8);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, -20%);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  font-family: 'Manrope Medium', sans-serif;
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.profilepic{
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 801px) {
+  .nav-item {
+      font-size: 20px;
+  }
+  .name{
+      font-size: 2.9em;
+  }
+  .position{
+      font-size: 1.25em;
+  }
+  .type{
+      font-size: 1.6em;
+  }
+  .profilepic{
+      max-width: 220px; 
+      max-height: 220px;
+  }
+  .aboutpic{
+      padding-left: 20px;
+      float: right;
+      max-width: 250px; 
+      max-height: 250px;
+  }
+  .aboutlogo{
+    padding-left: 20px;
+    float: right;
+    max-width: 200px; 
+    max-height: 200px;
+  }
+  .link-container>div {
+      text-align: center;
+      font-size: 40px;
+  }
+  .project-title {
+    font-size: 40px;
+  }
+  .card{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-item {
+      font-size: 14px;
+  }
+  .name{
+      font-size: 2.2em;
+  }
+  .position{
+      font-size: 0.9em;
+  }
+  .type{
+      font-size: 1.2em;
+  }
+  .profilepic{
+      max-width: 180px; 
+      max-height: 180px;
+  }
+  .aboutpic{
+      padding-top: 20px;
+      max-width: 180px; 
+      max-height: 180px;
+  }
+  .aboutlogo{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 140px; 
+    max-height: 140px;
+}
+  .link-container>div {
+      text-align: center;
+      font-size: 30px;
+  }
+  #menu {
+    padding: 50px;
+    padding-top: 100px;
+  }
+
+  #menuToggle {
+    top: 30px;
+    left: 25px;
+  }
+  
+  #menuToggle span {
+    width: 28px; 
+    height: 3px; 
+    margin-bottom: 6px;
+  }
+  .project-title {
+    font-size: 30px;
+  }
+  .card{
+    width: 80%;
+  }
+}
+
+.cardspace{
+    padding-top:15vh;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.introcard{
+  margin-top: 50px;
+  padding: 35px 50px 35px 35px;
+  max-width: 600px;
+  height:auto;
+  /* border-radius: 10px; */
+  border-width: 2px;
+  overflow: auto;
+  text-align: left;
+  margin-bottom: 7vh;
+  border-radius: 0px;
+  background: #ffffff;
+  border:2px solid #292929;
+  box-shadow: 10px -10px 0px#2c2c2c;
+  font-family: 'Manrope Medium', sans-serif;          
+}
+
+
+/* ABOUT  */
+.about{
+  color: rgb(29, 29, 29);
+  /* text-align: center; */
+  padding: 35px 35px 35px 35px;
+  background: #ffffff;
+  font-family: 'Manrope Medium', sans-serif;
+  align-content: center;
+}
+.about>div>span>u>a{
+  color: rgb(29, 29, 29);
+}
+.about>p>u>a{
+  color: rgb(29, 29, 29);
+}
+
+/* LINKS  */
 .item1 { grid-area: github; }
 .item2 { grid-area: linkedin; }
 .item3 { grid-area: instagram; }
@@ -148,46 +320,7 @@ html{
 }
 .link-container>div>a {
   /* color: rgb(27, 27, 27); */
-  color: #efefef;
-}
-
-
-.about{
-  color: rgb(29, 29, 29);
-  /* text-align: center; */
-  padding: 35px 35px 35px 35px;
-  background: #efefef;
-  font-family: 'Manrope Bold', sans-serif;
-  align-content: center;
-}
-.about>div>span>u>a{
-  color: rgb(29, 29, 29);
-}
-.about>p>u>a{
-  color: rgb(29, 29, 29);
-}
-
-.projects{
-  text-align: center;
-  font-family: 'Manrope Bold', sans-serif;
-  align-content: center;
-  min-height: 100vh;
-  padding-left: 3%;
-  padding-right: 3%;
-  padding-bottom: 40px;
-}
-
-.project-card{
-  display:flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 40px;
-  max-width: 1100px;
-  background-color: #ffffff;
-  color: rgb(39, 39, 39);
-  border: none;
-  border-radius: 20px;
-  margin-bottom: 40px; 
+  color: #0e0e0e;
 }
 
 .text{
@@ -205,48 +338,207 @@ html{
   margin-top: 30px;
   max-width: 100%;
 }
+
+#project_div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#blogs_div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#videos_div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding-top: 30px;
+  gap: 20px;
+  justify-content: center;
+  font-family: 'Medium', sans-serif;
+}
+
+/* CARDS */
+.card {
+  border: 1px solid rgba(0, 0, 0, 1.0);
+  position: relative;
+  height: 0;
+  padding-bottom: 75%;
+  background-color: white;
+  border-radius: 0px;
+  overflow: hidden;
+  /* box-shadow: 5px -5px 0px #000000; */
+  transition: all 0.3s ease;
+  color: #0e0e0e;
+}
+.card__content>a {
+  color: #0e0e0e;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__title-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .card__title-overlay {
+  opacity: 0;
+}
+
+.card__content {
+  font-family: 'Manrope Bold', sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.card:hover .card__content {
+  opacity: 1;
+}
+
+.card__content-title {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 900;
+}
+
+.card__description {
+  margin: 0;
+  font-size: 12px;
+  font-weight: lighter;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  #project_div {
+    padding: 10px;
+  }
+
+  .card {
+    /* padding-bottom: 66.67%; This creates a 3:2 aspect ratio for smaller screens */
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .card__content-title {
+    font-size: 16px;
+  }
+
+  .card__description {
+    font-size: 12px;
+  }
+}
+
+/* Project title styling */
+.project-title {
+  color: #222222;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Manrope Bold', sans-serif;
+}
+
 /* Fonts */
 @font-face {
-    font-family: "Manrope ExtraBold";
-    src: url("./assets/fonts/web/Manrope-ExtraBold.woff2") format("woff2"),
-    url("./assets/fonts/ttf/Manrope-ExtraBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 800; }
-  @font-face {
-    font-family: "Manrope Bold";
-    src: url("./assets/fonts/web/Manrope-Bold.woff2") format("woff2"),
-    url("./assets/fonts/ttf/Manrope-Bold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 700; }
-  @font-face {
-    font-family: "Manrope SemiBold";
-    src: url("./assets/fonts/web/Manrope-SemiBold.woff2") format("woff2"),
-    url("./assets/fonts/ttf/Manrope-SemiBold.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 600; }
-  @font-face {
-    font-family: "Manrope Medium";
-    src: url("./assets/fonts/web/Manrope-Medium.woff2") format("woff2"),
-    url("./assets/fonts/ttf/Manrope-Medium.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 500; }
-  @font-face {
-    font-family: "Manrope Regular";
-    src: url("./assets/fonts/web/Manrope-Regular.woff2") format("woff2"),
-    url("./assets/fonts/ttf/Manrope-Regular.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 400; }
-  @font-face {
-    font-family: "Manrope Light";
-    src: url("./assets/fonts/web/Manrope-Light.woff2") format("woff2"),
-    url("./assets/fonts/ttf/Manrope-Light.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 300; }
-  @font-face {
-    font-family: "Manrope ExtraLight";
-    src: url("./assets/fonts/web/Manrope-ExtraLight.woff2") format("woff2"),
-    url("./assets/fonts/ttf/Manrope-ExtraLight.ttf") format("truetype");
-    font-style: normal;
-    font-weight: 200; }
-
-    
+  font-family: "Manrope ExtraBold";
+  src: url("./assets/fonts/web/Manrope-ExtraBold.woff2") format("woff2"),
+  url("./assets/fonts/ttf/Manrope-ExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 800; }
+@font-face {
+  font-family: "Manrope Bold";
+  src: url("./assets/fonts/web/Manrope-Bold.woff2") format("woff2"),
+  url("./assets/fonts/ttf/Manrope-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700; }
+@font-face {
+  font-family: "Manrope SemiBold";
+  src: url("./assets/fonts/web/Manrope-SemiBold.woff2") format("woff2"),
+  url("./assets/fonts/ttf/Manrope-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600; }
+@font-face {
+  font-family: "Manrope Medium";
+  src: url("./assets/fonts/web/Manrope-Medium.woff2") format("woff2"),
+  url("./assets/fonts/ttf/Manrope-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500; }
+@font-face {
+  font-family: "Manrope Regular";
+  src: url("./assets/fonts/web/Manrope-Regular.woff2") format("woff2"),
+  url("./assets/fonts/ttf/Manrope-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+@font-face {
+  font-family: "Manrope Light";
+  src: url("./assets/fonts/web/Manrope-Light.woff2") format("woff2"),
+  url("./assets/fonts/ttf/Manrope-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300; }
+@font-face {
+  font-family: "Manrope ExtraLight";
+  src: url("./assets/fonts/web/Manrope-ExtraLight.woff2") format("woff2"),
+  url("./assets/fonts/ttf/Manrope-ExtraLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 200; }

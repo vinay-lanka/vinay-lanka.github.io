@@ -1,5 +1,5 @@
 new TypeIt("#app", {
-  strings: ["Robotics Engineer","Computer Vision Engineer","Deep Learning Engineer"],
+  strings: ["Robotics","Computer Vision","Deep Learning", "Generative AI"],
   speed: 30,
   breakLines: false,
   waitUntilVisible: true,
@@ -12,76 +12,117 @@ new TypeIt("#app", {
 var project_div = document.getElementById("project_div");
 var card_div = document.getElementById("cardspace");
 var blogs_div = document.getElementById("blogs_div");
+var about_div = document.getElementById("about");
+var videos_div = document.getElementById("videos_div");
 
 blogs_div.style.display = "none";
 project_div.style.display = "none";
 card_div.style.display = "block";
+about_div.style.display = "none";
+videos_div.style.display = "none";
+
+const checkbox = document.querySelector('#menuToggle input[type="checkbox"]');
 
 function toggle(that){
   console.log(that.innerHTML);
-  if(that.innerHTML==="Projects"){
+  if(that.innerHTML==="<li>Projects</li>"){
+    checkbox.checked = false;
     project_div.style.display = "block";
     blogs_div.style.display = "none";
     card_div.style.display = "none";
-    document.getElementById("nav1").innerHTML = "Home";
-    document.getElementById("nav2").innerHTML = "Videos/Blogs";
-  }else if (that.innerHTML==="Home"){
+    about_div.style.display = "none";
+    videos_div.style.display = "none";
+  }else if (that.innerHTML==="<li>Home</li>"){
+    checkbox.checked = false;
     project_div.style.display = "none";
     blogs_div.style.display = "none";
     card_div.style.display = "block";
-    document.getElementById("nav1").innerHTML = "Projects";
-    document.getElementById("nav2").innerHTML = "Videos/Blogs";
-  }else if(that.innerHTML==="Videos/Blogs"){
+    about_div.style.display = "none";
+    videos_div.style.display = "none";
+  }else if (that.innerHTML==="<li>Videos</li>"){
+    checkbox.checked = false;
+    project_div.style.display = "none";
+    blogs_div.style.display = "none";
+    card_div.style.display = "none";
+    about_div.style.display = "none";
+    videos_div.style.display = "block";
+  }else if(that.innerHTML==="<li>Blogs</li>"){
+    checkbox.checked = false;
     blogs_div.style.display = "block";
     card_div.style.display = "none";
     project_div.style.display = "none";
-    document.getElementById("nav1").innerHTML = "Home";
-    document.getElementById("nav2").innerHTML = "Projects";
+    about_div.style.display = "none";
+    videos_div.style.display = "none";
+  }else if (that.innerHTML==="<li>About</li>"){
+    checkbox.checked = false;
+    project_div.style.display = "none";
+    blogs_div.style.display = "none";
+    card_div.style.display = "none";
+    about_div.style.display = "block";
+    videos_div.style.display = "none";
   }
 }
 
+
 $(function() {
-    // console.log(project_data);
-  var html = ''
-  html+= '<span style="font-size:30px; color: #efefef;">Projects</span><br><br>';
-  html+= '<center>'
+  var html = '';
+  html += '<h1 class="project-title">Projects</h1>';
+  html += '<div class="projects-grid">';
   $.each(project_data, function(key, value) {
-    html+= '<div class="project-card">';
-    html+= '<div class="text">';
-    html+= '<h3 style="text-align: left;">' + value.title + '</h3><br>'
-    html+= value.body
+    html += '<div class="card">';
+    html += '<img class="card__image" src="' + value.imagelink + '" alt="' + value.title + '">';
+    html += '<div class="card__title-overlay">' + value.title + '</div>';
+    html += '<div class="card__content">';
+    html += '<p class="card__content-title">' + value.title + '</p>';
+    html += '<p class="card__description">' + value.body + '</p>';
     if (value.link != "") {
-      html+= '<br><br><a href="' + value.link + '">Check it out!</a>'
+    html+= '<br><a href="' + value.link + '">Check it out!</a>'
     }
-    html+= '</div>'  
-    html+= '<div>'
-    html+= '<img class="responsive" src="' + value.imagelink + '" height="300" width="533">'
-    html+= '</div>'
-    html+= '</div>'
+    html += '</div>';
+    html += '</div>';
   });
-  html+= '</center>'
+  html += '</div>';
   $("#project_div").html(html);
-  // console.log(html);
 });
 
 $(function() {
-  console.log(blog_data);
-  var blog_html = ''
-  blog_html+= '<span style="font-size:30px; color: #efefef;">Papers/Blogs/Videos</span><br><br>';
-  blog_html+= '<center>'
+  var html = '';
+  html += '<h1 class="project-title">Blogs</h1>';
+  html += '<div class="projects-grid">';
   $.each(blog_data, function(key, value) {
-    blog_html+= '<div class="project-card">';
-    blog_html+= '<div class="text">';
-    blog_html+= '<h3 style="text-align: left;">' + value.title + '</h3><br>'
-    blog_html+= value.body
-    blog_html+= '<br><br><a href="' + value.link + '">Check it out!</a>'
-    blog_html+= '</div>'  
-    blog_html+= '<div>'
-    blog_html+= '<img class="responsive" src="' + value.imagelink + '"height="300" width="533">'
-    blog_html+= '</div>'
-    blog_html+= '</div>'
+    html += '<div class="card">';
+    html += '<img class="card__image" src="' + value.imagelink + '" alt="' + value.title + '">';
+    html += '<div class="card__title-overlay">' + value.title + '</div>';
+    html += '<div class="card__content">';
+    html += '<p class="card__content-title">' + value.title + '</p>';
+    html += '<p class="card__description">' + value.body + '</p>';
+    if (value.link != "") {
+      html+= '<br><a href="' + value.link + '">Check it out!</a>'
+    }
+    html += '</div>';
+    html += '</div>';
   });
-  blog_html+= '</center>'
-  $("#blogs_div").html(blog_html);
-  // console.log(html);
+  html += '</div>';
+  $("#blogs_div").html(html);
+});
+
+$(function() {
+  var html = '';
+  html += '<h1 class="project-title">Videos</h1>';
+  html += '<div class="projects-grid">';
+  $.each(video_data, function(key, value) {
+    html += '<div class="card">';
+    html += '<img class="card__image" src="' + value.imagelink + '" alt="' + value.title + '">';
+    html += '<div class="card__title-overlay">' + value.title + '</div>';
+    html += '<div class="card__content">';
+    html += '<p class="card__content-title">' + value.title + '</p>';
+    html += '<p class="card__description">' + value.body + '</p>';
+    if (value.link != "") {
+      html+= '<br><a href="' + value.link + '">Check it out!</a>'
+    }
+    html += '</div>';
+    html += '</div>';
+  });
+  html += '</div>';
+  $("#videos_div").html(html);
 });

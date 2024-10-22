@@ -1,18 +1,48 @@
 var project_data =  [{
         "title": "Drone Visual Particle Filter (CamDroneLoc)",
-        "body": "Developed a novel particle filter for drone localization and odometry prediction using visual image encodings (CNN, VecKM, histogram of feature encodings) as measurement readings. Implemented, tested, and optimized the model in a Gazebo PX4 SITL world, demonstrating improved drone positioning accuracy.",        
+        "body": "Developed a novel particle filter for drone localization using visual encodings (CNN, VecKM, HOF), tested in Gazebo PX4 SITL, improving positioning accuracy.",
         "link": "https://github.com/vinay-lanka/Visual-Encoding-Particle-Filter",
         "imagelink": "assets/images/camdroneloc.jpeg"
     },
     {
         "title": "Path Planning Competition Winner",
-        "body": "Won the Path Planning competition held for ENPM661 - Path Planning for Robots. The Turtlebot has to navigate the environment from start to finish in the least time, avoiding the white lines and the obstacles. Was a fun experience.",        
+        "body": "Footage from our winning run for a Path Planning competition held for ENPM661 - Path Planning for Robots.",        
         "link": "https://youtu.be/sFpMTiF1X4U",
         "imagelink": "assets/images/competition.png"
     },
     {
+        "title": "Perception and Localization (Clearpath Husky)",
+        "body": "Perception and Localization for Autonomous Navigation with the Clearpath Husky Robot using the Ouster OS-1 Lidar, GPS, and Camera Data.",
+        "link": "https://www.youtube.com/watch?v=qxVRKsFqz8o",
+        "imagelink": "assets/images/husky.png"
+    },
+    {
+        "title": "AutoPano",
+        "body": "Automatic Panorama Stitching Using Traditional and Deep Learning Computer Vision Techniques",
+        "link": "https://github.com/vinay-lanka/AutoPano",
+        "imagelink": "assets/images/autopano.png"
+    },
+    {
+        "title": "PbLite boundary detection",
+        "body": "Implemented PbLite boundary detection algorithm for edge detection",
+        "link": "https://github.com/vinay-lanka/Pb-Lite-Edge-Detection",
+        "imagelink": "assets/images/pblite.png"
+    },
+    {
+        "title": "Image classification on the CIFAR10",
+        "body": "Implementation and Benchmarking 5 CNN Architectures on the CIFAR-10 Dataset.",
+        "link": "https://github.com/vinay-lanka/CIFAR-10-arch-benchmarking",
+        "imagelink": "assets/images/cifar.png"
+    },
+    {
+        "title": "Dynamic Fleet Management",
+        "body": "Swarm robotics platform that incorporates multi-agent collision avoidance using a RVO-2 planner based on the ORCA algorithm.",        
+        "link": "https://github.com/vinay-lanka/Dynamic-Fleet-Management",
+        "imagelink": "assets/images/dfm.png"
+    },
+    {
         "title": "EV Charging Bot",
-        "body": "Developed an EV Charging Bot based on the FANUC CRX-10iA/L cobot that can dock to a charger using a Stereo camera based perception system. The perception system generates a goal in 3D space from a video feed and an velocity IK based solver designed from scratch generates and executes a real-time trajectory using the SRI Jacobian inverse method using Damped Least Squares.",        
+        "body": "Developed an EV Charging Bot with FANUC CRX-10iA/L, using stereo vision for 3D goal generation and a custom IK solver for real-time trajectory execution via Damped Least Squares.",
         "link": "https://github.com/vinay-lanka/car_charger_robot",
         "imagelink": "assets/images/sim.gif"
     },
@@ -24,15 +54,27 @@ var project_data =  [{
     },
     {
         "title": "Intercom Device (Client) (Neoflux)",
-        "body": "Developed a solution for a production-grade multithreaded VOIP product with G711 alaw encoding and encryption based on the Raspberry Pi CM4 module. Designed a carrier board with suitable components for audio recording, processing, and playback.",        
+        "body": "Developed a production-grade multithreaded VOIP solution with G711 alaw encoding and encryption on Raspberry Pi CM4, including a custom carrier board for audio recording, processing, and playback.",        
         "link": "",
         "imagelink": "assets/images/intercom.jpg"
     },
     {
         "title": "Autonomous Land Mapping Robot (Client) (Neoflux)",
-        "body": "Developed a fully autonomous exploration robot to map an unknown area in 3D. Designed the chassis, electronics and custom algorithms for navigation. Implemented 2-stage EKF (local and global) with RTK GPS for precise position estimates.",        
+        "body": "Developed an autonomous exploration robot for 3D mapping with a custom chassis, electronics, and navigation algorithms, using 2-stage EKF and RTK GPS for accurate positioning.",        
         "link": "",
         "imagelink": "assets/images/autonomouslandmappingrobot.jpg"
+    },
+    {
+        "title": "Kart - A robotics implementation of Mario Kart!",
+        "body": "Real-life Mario kart with LIDAR for Map, A differential drive robot, and Camera for powerups",        
+        "link": "https://youtu.be/bQc4SbMhdaM?si=rAWOEX3_j1pOQ2Te",
+        "imagelink": "assets/images/kart.png"
+    },
+    {
+        "title": "Tic-Tac-Toe Robot (Neoflux)",
+        "body": "A Gantry Robot that can play tic-tac-toe with you",        
+        "link": "https://www.youtube.com/watch?v=Trr5ViJrN2M&t=2s",
+        "imagelink": "assets/images/tictactoe.png"
     },
     {
         "title": "Magic Wand (Gesture recognition) (Neoflux)",
@@ -43,12 +85,12 @@ var project_data =  [{
     {
         "title": "The battery pack (Neoflux)",
         "body": "A tiny battery made with off the shelf components for quick prototyping of IoT usecases with wireless charging.",        
-        "link": "https://www.youtube.com/watch?v=QO9MB4L_WQU",
+        "link": "https://youtu.be/sqCy1vShRtc",
         "imagelink": "assets/images/batterypack.png"
     },
     {
         "title": "Robot-Web-Suite",
-        "body": "Robot-Web-Suite is a web-based platform to remotely control your robotic devices in real-time. <br>An intuitive web interface to manipulate devices like robotic arms and rovers with a service to log points and achieve playback. <br>The system is aimed to replace the usage of teach pendants or similar devices in industrial automation. <br>Using ROS and MoveIt packages we focus on creating a hardware agnostic system that can easily be ported to any robot.",        
+        "body": "Robot-Web-Suite is a web platform for real-time remote control of robotic devices, offering point logging and playback. Built with ROS and MoveIt for hardware-agnostic, intuitive control in industrial automation.",        
         "link": "https://www.youtube.com/watch?v=37U62tWk-zE&t=29s",
         "imagelink": "assets/images/robotwebsuitedemo.png"
     },
@@ -73,22 +115,34 @@ var project_data =  [{
 ]
 var blog_data =  [
     {
+        "title": "Multi-Agent Reinforcement Learning",
+        "body": "Extending Single Agent RL, Optimization Algorithms, Communication Algorithms, and Challenges",
+        "link": "https://medium.com/@vinaylanka/multi-agent-reinforcement-learning-marl-1d55dfff6439",
+        "imagelink": "assets/images/MARL.gif"
+    },
+    {
+        "title": "Generative AI - Paper Reviews",
+        "body": "Paper Reviews for the CMSC848K course - Multimodal Foundation Models (Fall 24)",
+        "link": "https://drive.google.com/drive/folders/1pd78b6giiNl1lMan9KdE_3vmhufouXAi",
+        "imagelink": "assets/images/attention.png"
+    },
+    {
+        "title": "Remote Development - Tools and Protocols",
+        "body": "A journal for my experiments with remote development ",
+        "link": "https://medium.com/@vinaylanka/chasing-the-ultimate-remote-development-setup-8531c41b6d01",
+        "imagelink": "assets/images/remote.png"
+    },
+    {
         "title": "Disturbance Compensating Model Predictive Control",
         "body": "Wrote a comprehensive report and implemented the paper by Z. Li and J. Sun, ”Disturbance Compensating Model Predictive Control With Application to Ship Heading Control”",
         "link": "assets/DCMPC_Report.pdf",
         "imagelink": "assets/images/dcmpc.png"
     },
     {
-        "title": "Research Paper - <br> Designing and Implementing Robot-Web-Suite, <br> A Cloud Based Robotics Platform",
-        "body": "Robot-Web-Suite is a web-based platform to control your robotic devices remotely in real-time. The end-user is provided with an intuitive web interface to manipulate devices like robotic arms and mobile robots without having any prior knowledge of the kinematics of the machines. The system also provides a service to log points and achieve playback.",
+        "title": "Research Paper - Robot-Web-Suite, A Cloud Based Robotics Platform",
+        "body": "Robot-Web-Suite is a web platform for real-time remote control of robotic devices, offering point logging and playback. Built with ROS and MoveIt for hardware-agnostic, intuitive control in industrial automation.",        
         "link": "https://ieeexplore.ieee.org/document/9929637",
         "imagelink": "assets/images/paper.png"
-    },
-    {
-        "title": "Autonomous Rover From Scratch (ROS) Part 1",
-        "body": " Part 1 of making an Autonomous Robot from scratch using ROS.<br> Here we look at building a basic model and getting started with the microcontroller.",
-        "link": "https://www.youtube.com/watch?v=SLDJAOEjVt4&t=434s",
-        "imagelink": "assets/images/autonomousroverpt1.jpg"
     },
     {
         "title": "Swish and Flick — Gesture Detection using Deep Learning on Edge Devices",
@@ -101,12 +155,6 @@ var blog_data =  [
         "body": "Using the AMS5600 Magnetic Encoder to solve closed loop control",
         "link": "https://medium.com/@vinaylanka/closed-loop-position-control-in-stepper-motors-7f531c084dcd",
         "imagelink": "assets/images/closedloop.png"
-    },
-    {
-        "title": "Autonomous Rover From Scratch (ROS) Part 2",
-        "body": " Part 2 of making an Autonomous robot from scratch using ROS. <br> This ultra-long episode covers a lot of stuff. We finally finish writing the Arduino sketch for the hardware. We briefly understand what ROS is,why it was formed and how it works. We look at the kinematics of a differential-drive robot and implement the differential-drive package in a ROS workspace.",
-        "link": "https://www.youtube.com/watch?v=n9yU7u55zGg",
-        "imagelink": "assets/images/autonomousroverpt2.jpg"
     },
     {
         "title": "Making a hyper-engineered water alarm solution",
@@ -137,5 +185,86 @@ var blog_data =  [
         "body": "A helpful guide for people to choose the right board for their next project",
         "link": "https://medium.com/techloop/development-boards-a-guide-ab5767f15d47",
         "imagelink": "assets/images/devboard.jpeg"
+    }
+]
+
+var video_data =  [
+    {
+        "title": "Perception and Localization (Clearpath Husky)",
+        "body": "Perception and Localization for Autonomous Navigation with the Clearpath Husky Robot using the Ouster OS-1 Lidar, GPS, and Camera Data.",
+        "link": "https://www.youtube.com/watch?v=qxVRKsFqz8o",
+        "imagelink": "assets/images/husky.png"
+    },
+    {
+        "title": "CamDroneLoc - Visual Encoding Particle Filter",
+        "body": "Developed a novel particle filter for drone localization using visual encodings (CNN, VecKM, HOF), tested in Gazebo PX4 SITL, improving positioning accuracy.",
+        "link": "https://www.youtube.com/watch?v=3dkgl0cokEY",
+        "imagelink": "assets/images/camdroneloc.jpeg"
+    },
+    {
+        "title": "Accelerated RRT* - LDV",
+        "body": "Optimized RRT* (in speed and performance) using low directional visibility",
+        "link": "https://www.youtube.com/watch?v=BdJfilJLqzQ",
+        "imagelink": "assets/images/rrt.png"
+    },
+    {
+        "title": "Path Planning Competition Winner",
+        "body": "Footage from our winning run for a Path Planning competition held for ENPM661 - Path Planning for Robots.",        
+        "link": "https://youtu.be/sFpMTiF1X4U",
+        "imagelink": "assets/images/competition.png"
+    },
+    {
+        "title": "Dynamic Fleet Management",
+        "body": "Swarm robotics platform that incorporates multi-agent collision avoidance using a RVO-2 planner based on the ORCA algorithm.",        
+        "link": "https://www.youtube.com/watch?v=1cPTRiXnLuE",
+        "imagelink": "assets/images/dfm.png"
+    },
+    {
+        "title": "EV Charging Bot",
+        "body": "Developed an EV Charging Bot with FANUC CRX-10iA/L, using stereo vision for 3D goal generation and a custom IK solver for real-time trajectory execution via Damped Least Squares.",
+        "link": "https://youtu.be/1iAACLgSYIM?si=0eZgVIJ1P4KDU2Jb",
+        "imagelink": "assets/images/sim.gif"
+    },
+    {
+        "title": "HDAL: Human Detection and Localization",
+        "body": "Designed and deployed a geometric computer vision algorithm that uses intrinsic camera parameters and pixel information from bounding box information detected using a YOLO v5 model to get accuracy levels greater than 95% for calculated human coordinates relative to the robot’s camera.",        
+        "link": "https://youtu.be/OOvEyM7ZvEM?si=e63WtaE9EzlBr_6B",
+        "imagelink": "https://i3.ytimg.com/vi/6D_xVzv4fGo/maxresdefault.jpg"
+    },
+    {
+        "title": "Kart - A robotics implementation of Mario Kart!",
+        "body": "Real-life Mario kart with LIDAR for Map, A differential drive robot, and Camera for powerups",        
+        "link": "https://youtu.be/bQc4SbMhdaM?si=rAWOEX3_j1pOQ2Te",
+        "imagelink": "assets/images/kart.png"
+    },
+    {
+        "title": "Tic-Tac-Toe Robot (Neoflux)",
+        "body": "A Gantry Robot that can play tic-tac-toe with you",        
+        "link": "https://www.youtube.com/watch?v=Trr5ViJrN2M&t=2s",
+        "imagelink": "assets/images/tictactoe.png"
+    },
+    {
+        "title": "The battery pack (Neoflux)",
+        "body": "A tiny battery made with off the shelf components for quick prototyping of IoT usecases with wireless charging.",        
+        "link": "https://youtu.be/sqCy1vShRtc",
+        "imagelink": "assets/images/batterypack.png"
+    },
+    {
+        "title": "CNC Plotter (Neoflux)",
+        "body": "CNC Plotter made with Arduino and GRBL",        
+        "link": "https://youtu.be/sBb0i59z0TI",
+        "imagelink": "assets/images/cnc.png"
+    },
+    {
+        "title": "Autonomous Rover From Scratch (ROS) Part 1",
+        "body": "Part 1 of making an Autonomous Robot from scratch using ROS.<br> Here we look at building a basic model and getting started with the microcontroller.",
+        "link": "https://www.youtube.com/watch?v=SLDJAOEjVt4&t=434s",
+        "imagelink": "assets/images/autonomousroverpt1.jpg"
+    },
+    {
+        "title": "Autonomous Rover From Scratch (ROS) Part 2",
+        "body": "Part 2 of making an Autonomous robot from scratch using ROS. <br> This ultra-long episode covers a lot of stuff. We finally finish writing the Arduino sketch for the hardware. We briefly understand what ROS is,why it was formed and how it works. We look at the kinematics of a differential-drive robot and implement the differential-drive package in a ROS workspace.",
+        "link": "https://www.youtube.com/watch?v=n9yU7u55zGg",
+        "imagelink": "assets/images/autonomousroverpt2.jpg"
     }
 ]
