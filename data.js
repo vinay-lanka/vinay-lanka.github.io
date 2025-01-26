@@ -1,4 +1,9 @@
 var project_data =  [{
+    "title": "Point Cloud MultiModal Masked Autoencoding(ObitoNet) GitHub",
+    "body": "ObitoNet takes in Masked PointClouds and outputs reconstructed point clouds and recovers missing details or sparse data using the masked autoencoder design.",
+    "link": "https://github.com/vinay-lanka/ObitoNet",
+    "imagelink": "assets/images/obitonet.png"
+    },{
         "title": "Drone Visual Particle Filter (CamDroneLoc)",
         "body": "Developed a novel particle filter for drone localization using visual encodings (CNN, VecKM, HOF), tested in Gazebo PX4 SITL, improving positioning accuracy.",
         "link": "https://github.com/vinay-lanka/Visual-Encoding-Particle-Filter",
@@ -113,7 +118,12 @@ var project_data =  [{
         "imagelink": "assets/images/coloursorter.png"
     }
 ]
-var blog_data =  [
+var blog_data =  [{
+    "title": "Point Cloud MultiModal Masked Autoencoding(ObitoNet) ArXiv",
+    "body": "ObitoNet takes in Masked PointClouds and outputs reconstructed point clouds and recovers missing details or sparse data using the masked autoencoder design.",
+    "link": "https://arxiv.org/abs/2412.18775",
+    "imagelink": "assets/images/obitonet.png"
+    },
     {
         "title": "Multi-Agent Reinforcement Learning",
         "body": "Extending Single Agent RL, Optimization Algorithms, Communication Algorithms, and Challenges",
