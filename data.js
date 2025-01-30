@@ -1,8 +1,13 @@
 var project_data =  [{
-    "title": "Point Cloud MultiModal Masked Autoencoding (ObitoNet) GitHub",
-    "body": "ObitoNet takes in Masked PointClouds and outputs reconstructed point clouds and recovers missing details or sparse data using the masked autoencoder design.",
-    "link": "https://github.com/vinay-lanka/ObitoNet",
-    "imagelink": "assets/images/obitonet.png"
+        "title": "Point Cloud MultiModal Masked Autoencoding (ObitoNet) GitHub",
+        "body": "ObitoNet takes in Masked PointClouds and outputs reconstructed point clouds and recovers missing details or sparse data using the masked autoencoder design.",
+        "link": "https://github.com/vinay-lanka/ObitoNet",
+        "imagelink": "assets/images/obitonet.png"
+    },{
+        "title": "Reinforcement Learning Meets Visual Odometry",
+        "body": "This is the implementation and the output for the ECCV24 paper Reinforcement Learning Meets Visual Odometry, along with other experimental approaches.",
+        "link": "https://www.youtube.com/watch?v=x-Qa2JWHJPU",
+        "imagelink": "assets/images/rlvo.png"
     },{
         "title": "Drone Visual Particle Filter (CamDroneLoc)",
         "body": "Developed a novel particle filter for drone localization using visual encodings (CNN, VecKM, HOF), tested in Gazebo PX4 SITL, improving positioning accuracy.",
