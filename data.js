@@ -1,4 +1,9 @@
 var project_data =  [{
+    "title": "Vision to Manufacture: A Fully Local Manufacturing Deep Research Engine",
+    "body": "A robust, self-contained system for manufacturing knowledge retrieval and analysis, designed to operate entirely locally.",
+    "link": "https://github.com/vinay-lanka/local-deep-research",
+    "imagelink": "assets/images/project_pipeline.jpeg"
+    },{
         "title": "Point Cloud MultiModal Masked Autoencoding (ObitoNet) GitHub",
         "body": "ObitoNet takes in Masked PointClouds and outputs reconstructed point clouds and recovers missing details or sparse data using the masked autoencoder design.",
         "link": "https://github.com/vinay-lanka/ObitoNet",
